@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./stayl2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a">
+        <h2 class="b">sait studm</h2>
+        <ul class="c">
+            <a href="./indx2.html" >
+                <li class="e">اطلاعات</li>
+            </a>
+            <a href="./indx.html">
+                <li class="f">صفحه اصلی</li>
+            </a>
+        </ul>
+        <img src="./1743164050387.webp" alt="sait atod" class="d">
+     </div>
+
+     <div class="container">
+        <div class="box">
+          <div class="title">برای ساخت سایت</div>
+          <p>لینک در بیوی تلگرام که آیدی در کانال تلگرام گذاشته شده است</p>
+          <p>برای ساخت هر سایت ۲ هفته زمان می‌برد و فعلاً برنامه یا وب طراحی نمی‌شود و قیمت‌هایی از ۴ میلیون تا ۱۶ میلیون است، و در کانال‌هایی مانند یوتیوب کمک‌هایی برای رفع باگ است</p>
+        </div>
+      
+        <div class="box location-box">
+          <div class="title">موقعیت مکانی</div>
+          <p>استان: آذربایجان غربی، شهر: بوکان، جاده حصار منطقه، روبه‌روی فروشگاه باران</p>
+          <p>طراح: رامیار یگانه - دارای مدرک HTML، CSS، JavaScript با یک سال سابقه تمرین</p>
+          <p>بوکان خیابان سه‌راه آتش‌نشانی روبه‌روی پارک ملت - نام محل کار: آموزشگاه گاه سهیل</p>
+        </div>
+      
+        <div class="box">
+          <p>زمان تولید سایت: سال ۱۴۰۴ | زمان فعالیت برنامه‌نویسی: سال ۱۴۰۳</p>
+          <p>برای sait studm یا ادامه دادن برای سابقه بیشتر، اراده و ساخت سایت در خدمت می‌باشد</p>
+        </div>
+      
+        <div class="box">
+          <p>اگر در سایت و طرح این سایت راضی بوده‌اید می‌توانید با نظر سنجی پایین به ما نظر بدهید چون باعث اعتماد به نفس و خوشحالی ما می‌شود</p>
+            <div class="feedback">
+              <form action="submit.php" method="POST" id="feedbackForm">
+                <label><input type="radio" name="feedback" value="عالی"> عالی</label>
+                <label><input type="radio" name="feedback" value="خوب"> خوب</label>
+                <label><input type="radio" name="feedback" value="بد"> بد</label><br>
+                <button type="submit" class="submit-btn">ثبت نظر سنجی</button>
+              </form>
+            
+              <div id="allFeedbacks">
+                <h3>نظرات ثبت‌شده:</h3>
+                <?php
+                  $file = "feedbacks.txt";
+                  if (file_exists($file)) {
+                    $lines = file($file);
+                    foreach ($lines as $line) {
+                      echo "<p>" . htmlspecialchars($line) . "</p>";
+                    }
+                  }
+                ?>
+              </div>
+            <div id="allFeedbacks" style="margin-top: 20px;"></div>
+        </div>
+          
+          
+        </div>
+      </div>
+
+      <div class="ac">
+        <aside class="kart">sait studm</aside>
+        <aside class="blo">
+            <div class="bko">
+
+            </div>
+            <div class="asad">
+        <ul class="azes">
+            <a class="bq" href="https://www.youtube.com/@sait_studm">
+                <li class="bf">youtube</li>
+            </a>
+            <a class="be" href="">
+                <li class="bw">enstagram</li>
+            </a>
+          </ul>
+          <ul class="bg">
+            <a class="bh" href="https://t.me/+qGFpUrFCiqxkODJk">
+                <li class="bi">tlegram</li>
+            </a>
+          </ul>
+          <ul class="soto">
+            <a class="bk" href="./indx2.html">
+                <li class="bl">اطلاعات</li>
+            </a>
+            <a class="bk" href="./indx.html">
+                <li class="bm">صفحه اصلی</li>
+            </a>
+          </ul>
+          
+<h2 class="tof">میتوانید مارا در کانال های یوتوب و اینست مارا دنبال کنید با تشکر</h2>
+          </div>
+          </aside>
+     </div>
+     <script src="script2.js"></script>
+</body>
+</html>
